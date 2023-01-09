@@ -1,0 +1,10 @@
+0 silly argv { _: [ 'init' ], lernaVersion: '6.4.0', '$0': 'lerna' }
+1 notice cli v6.4.0
+2 verbose rootPath /Users/sridhar/WebstormProjects/be-at-barclays
+3 verbose init skipping validations
+4 verbose init skipping preparations
+5 info Initializing Git repository
+6 error Error: Command failed with exit code 1: git init
+6 error xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+6 error     at makeError (/usr/local/lib/node_modules/lerna/node_modules/execa/lib/error.js:60:11)
+6 error     at handlePromise (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:118:26)

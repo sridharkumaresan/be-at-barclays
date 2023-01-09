@@ -1,0 +1,18 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "projects/*"
+  ],
+  "devDependencies": {
+    "lerna": "^6.4.0"
+  },
+  "dependencies": {
+    "prettier": "^2.8.2"
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "start": "lerna run start --stream",
+    "clean": "lerna clean"
+  }
+}
