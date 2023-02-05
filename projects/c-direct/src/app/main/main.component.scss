@@ -1,0 +1,14 @@
+.card-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.example-card {
+  min-width: 15em;
+}
+.card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,14 @@
+<ng-container *ngIf="initAnimation; else dummyTmpl">
+  <svg>
+    <circle class="bg" cx="57" cy="57" r="52"/>
+    <circle class="progress" cx="57" cy="57" r="52" appResetAnimation [timer]="timer"
+            [initAnimation]="initAnimation"/>
+  </svg>
+</ng-container>
+<ng-template #dummyTmpl>
+  <svg>
+    <circle class="bg" cx="57" cy="57" r="52"/>
+    <circle class="progress" cx="57" cy="57" r="52"/>
+  </svg>
+</ng-template>
+

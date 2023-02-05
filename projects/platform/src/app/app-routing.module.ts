@@ -32,7 +32,7 @@ const routes: Routes = [
     path: 'colleague-direct',
     loadChildren: () =>
       loadRemoteModule({
-        remoteEntry: 'http://localhost:4202/remoteEntry.js',
+        remoteEntry: 'http://localhost:4203/remoteEntry.js',
         type: 'module',
         exposedModule: './CDirectModule',
       }).then((m) => {
