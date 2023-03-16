@@ -4,6 +4,12 @@
       <mat-icon>menu</mat-icon>
     </button>
     <h1 class="example-app-name" [routerLink]="['/home']"> Platform </h1>
+    <button mat-icon-button [matMenuTriggerFor]="menu" mdTooltip="Change theme"><mat-icon>format_color_fill</mat-icon></button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="changeTheme(themes.LIGHT_THEME)">Light</button>
+      <button mat-menu-item (click)="changeTheme(themes.DARK_THEME)">Dark</button>
+      <button mat-menu-item (click)="changeTheme(themes.CUSTOM_THEME)">Custom</button>
+    </mat-menu>
   </mat-toolbar>
   <mat-sidenav-container class="example-sidenav-container">
     <mat-sidenav #snav [mode]="'side'" opened fixedTopGap="56" class="sidenav">
