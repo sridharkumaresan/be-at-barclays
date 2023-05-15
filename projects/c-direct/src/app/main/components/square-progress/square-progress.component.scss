@@ -1,0 +1,17 @@
+.square {
+    width: 100px;
+    height: 100px;
+    border: 5px solid transparent;
+    border-top-color: #000;
+    animation: fill 3s linear forwards;
+  }
+  
+  @keyframes fill {
+    from {
+      border-top-color: transparent;
+    }
+    to {
+      border-top-color: #000;
+    }
+  }
+  

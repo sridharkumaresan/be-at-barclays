@@ -24,4 +24,7 @@ export class MainComponent implements OnInit {
       this.timers.push({ key: self.crypto.randomUUID(), complete: false });
     }
   }
+  animationCompleted() {
+    console.log('Completed ');
+  }
 }
